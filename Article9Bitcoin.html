@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <h1><mark>Bitcoin</mark></h1>
+    <hr />
+
+    <a href="https://en.wikipedia.org/wiki/Bitcoin"
+      ><img
+        src="data:image/png;base64,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"
+        alt="Bitcoin"
+    /></a>
+    <p>
+      Bitcoin (abbreviation: BTC; sign: ₿) is the first
+      <strong>decentralized cryptocurrency</strong>. Nodes in the peer-to-peer
+      bitcoin network verify transactions through cryptography and record them
+      in a public distributed ledger, called a blockchain, without central
+      oversight. Consensus between nodes is achieved using a computationally
+      intensive process based on proof of work, called mining, that guarantees
+      the security of the bitcoin blockchain. Mining consumes increasing
+      quantities of electricity and has been criticized for its environmental
+      effects. Based on a free market ideology, bitcoin was invented in 2008 by
+      Satoshi Nakamoto, an unknown person.Use of bitcoin as a currency began in
+      2009, with the release of its open-source implementation.In 2021,
+      <strong>El Salvador </strong> it as legal tender.Bitcoin is currently used
+      more as a store of value and less as a <a href="https://en.wikipedia.org/wiki/Bitcoin"> medium of exchange</a> or unit of
+      account. It is mostly seen as an investment and has been described by many
+      scholars as an economic bubble. As bitcoin is pseudonymous, its use by
+      criminals has attracted the attention of regulators, leading to its ban by
+      several countries as of 2021.
+    </p>
+
+    <h2>History</h2>
+    <hr />
+
+    <h3>Background</h3>
+
+    <p>
+      Before bitcoin, several<strong> digital cash technologies </strong>
+      released, starting with David Chaum's ecash in the 1980s.The idea that
+      solutions to computational puzzles could have some value was first
+      proposed by cryptographers Cynthia Dwork and Moni Naor in 1992. The
+      concept was independently rediscovered by Adam Back who developed
+      Hashcash, a proof-of-work scheme for spam control in 1997. The first
+      proposals for distributed digital scarcity-based cryptocurrencies came
+      from cypherpunks Wei Dai (b-money) and Nick Szabo (bit gold) in 1998. In
+      2004, Hal Finney developed the first currency based on reusable proof of
+      work. These various attempts were not successful: Chaum's concept required
+      centralized control and no banks wanted to sign on, Hashcash had no
+      protection against double-spending, while b-money and bit gold were not
+      resistant to Sybil attacks.
+    </p>
+
+    <h3>2008–2009: Creation</h3>
+
+    <p>
+      The domain name bitcoin.org was registered on 18 August 2008. On 31
+      October 2008, a link to a white paper authored by <a href="https://en.wikipedia.org/wiki/Bitcoin">Satoshi Nakamoto</a> titled
+      Bitcoin: A Peer-to-Peer Electronic Cash System was posted to a
+      cryptography mailing list. Nakamoto implemented the bitcoin software as
+      open-source code and released it in January 2009.Nakamoto's identity
+      remains unknown.All individual components of bitcoin originated in earlier
+      academic literature. Nakamoto's innovation was their complex interplay
+      resulting in the first decentralized, Sybil resistant, Byzantine fault
+      tolerant digital cash system, that would eventually be referred to as the
+      first blockchain. Nakamoto's paper was not peer reviewed and was initially
+      ignored by academics, who argued that it could not work. On 3 January
+      2009, the bitcoin network was created when Nakamoto mined the starting
+      block of the chain, known as the <strong>genesis block.</strong> Embedded
+      in this block was the text "The Times 03/Jan/2009 Chancellor on brink of
+      second bailout for banks", which is the date and headline of an issue of
+      The Times newspaper. Nine days later, Hal Finney received the first
+      bitcoin transaction: ten bitcoins from Nakamoto. Wei Dai and Nick Szabo
+      were also early supporters. On May 22, 2010, the first known commercial
+      transaction using bitcoin occurred when programmer Laszlo Hanyecz bought
+      two Papa John's pizzas for ₿10,000, in what would later be celebrated as
+      "Bitcoin Pizza Day".
+    </p>
+
+    <h3>2010–2012: Early growth</h3>
+    <p>
+      Blockchain analysts estimate that Nakamoto had mined about one million
+      bitcoinsbefore disappearing in 2010 when he handed the network alert key
+      and control of the code repository over to Gavin Andresen. Andresen later
+      became lead developer at the Bitcoin Foundation, an organization founded
+      in September 2012 to promote bitcoin. After early "proof-of-concept"
+      transactions, the first major users of bitcoin were black markets, such as
+      the dark web Silk Road. During its 30 months of existence, beginning in
+      February 2011, Silk Road exclusively accepted bitcoins as payment,
+      transacting ₿9.9 million, worth about $214 million.
+    </p>
+
+    <h3>2013–2014: First regulatory actions</h3>
+    <p>
+      March 2013, the US Financial Crimes Enforcement Network (FinCEN)
+      established regulatory guidelines for "decentralized virtual currencies"
+      such as bitcoin, classifying American bitcoin miners who sell their
+      generated bitcoins as money services businesses, subject to registration
+      and other legal obligations. In May 2013, US authorities seized the
+      unregistered exchange Mt. Gox. In June 2013, the US Drug Enforcement
+      Administration seized ₿11.02 from a man attempting to use them to buy
+      illegal substances. This marked the first time a government agency had
+      seized bitcoins. The FBI seized about ₿30,000 in October 2013 from Silk
+      Road, following the arrest of its founder Ross Ulbricht. In December 2013,
+      the People's Bank of China prohibited Chinese financial institutions from
+      using bitcoin. After the announcement, the value of bitcoin dropped, and
+      Baidu no longer accepted bitcoins for certain services. Buying real-world
+      goods with any virtual currency had been illegal in China since at least
+      2009.
+    </p>
+
+    <h3>2015–2019</h3>
+    <p>
+      Research produced by the <a href="https://en.wikipedia.org/wiki/Bitcoin">University of Cambridge</a> estimated that in 2017,
+      there were 2.9 to 5.8 million unique users using a cryptocurrency wallet,
+      most of them using bitcoin. In August 2017, the SegWit software upgrade
+      was activated. Segwit was intended to support the Lightning Network as
+      well as improve scalability. SegWit opponents, who supported larger blocks
+      as a scalability solution, forked to create Bitcoin Cash, one of many
+      forks of bitcoin. In December 2017, the first futures on bitcoin was
+      introduced by the Chicago Mercantile Exchange (CME). In February 2018, the
+      price crashed after China imposed a complete ban on Bitcoin trading. The
+      percentage of bitcoin trading in the Chinese renminbi fell from over 90%
+      in September 2017 to less than 1% in June 2018. During the same year,
+      Bitcoin prices were negatively affected by several hacks or thefts from
+      cryptocurrency exchanges.
+    </p>
+
+    <h3>2020–present</h3>
+
+    <p>
+      2020, some major companies and institutions started to acquire bitcoin:
+      MicroStrategy invested $250 million in bitcoin as a treasury reserve
+      asset, Square, Inc., $50 million, and MassMutual, $100 million.In November
+      2020, PayPal added support for bitcoin in the US. In February 2021,
+      Bitcoin's market capitalization reached $1 trillion for the first time. In
+      November 2021, the Taproot soft-fork upgrade was activated, adding support
+      for Schnorr signatures, improved functionality of smart contracts and
+      Lightning Network. Before, Bitcoin only used a custom elliptic curve with
+      the ECDSA algorithm to produce signatures. In September 2021, Bitcoin
+      became legal tender in El Salvador, alongside the US dollar. In October
+      2021, the first bitcoin futures Exchange-traded fund (ETF), called BITO,
+      from ProShares was approved by the SEC and listed on the CME. In May and
+      June 2022, the bitcoin price fell following the collapses of TerraUSD, a
+      stablecoin, and the Celsius Network, a cryptocurrency loan company. In
+      2023, ordinals—non-fungible tokens (NFTs)—on Bitcoin, went live. In
+      January 2024, the first 11 US spot bitcoin ETFs began trading, offering
+      direct exposure to bitcoin for the first time on American stock exchanges.
+    </p>
+
+    <h2>Design</h2>
+    <hr />
+    <h3>Units and divisibility</h3>
+    <p>
+      The unit of account of the bitcoin system is the bitcoin. It is most
+      commonly represented with the symbol ₿ and the currency code BTC. However,
+      the BTC code does not conform to ISO 4217 as BT is the country code of
+      Bhutan, and ISO 4217 requires the first letter used in global commodities
+      to be 'X'. XBT, a code that conforms to ISO 4217 though not officially
+      part of it, is used by <a href="https://en.wikipedia.org/wiki/Bitcoin">Bloomberg</a> L.P. No uniform capitalization convention
+      exists; some sources use Bitcoin, capitalized, to refer to the technology
+      and network, and bitcoin, lowercase, for the unit of account. The
+      Cambridge Advanced Learner's Dictionary and the Oxford Advanced Learner's
+      Dictionary use the capitalized and lowercase variants without distinction.
+      One bitcoin is divisible to eight decimal places.Units for smaller amounts
+      of bitcoin are the millibitcoin (mBTC), equal to 1⁄1000 bitcoin, and the
+      satoshi (sat), representing 1⁄100000000 (one hundred millionth) bitcoin,
+      the smallest amount possible. 100,000 satoshis are one mBTC.
+    </p>
+
+    <h3>Blockchain</h3>
+
+    <p>
+      As a decentralized system, bitcoin operates without a central authority or
+      single administrator, so that anyone can create a new bitcoin address and
+      transact without needing any approval. This is accomplished through a
+      specialized distributed ledger called a blockchain that records bitcoin
+      transactions. The blockchain is implemented as an ordered list of blocks.
+      Each block contains a SHA-256 hash of the previous block, chaining them in
+      chronological order. The blockchain is maintained by a peer-to-peer
+      network. Individual blocks, public addresses, and transactions within
+      blocks are public information, and can be examined using a blockchain
+      explorer. Nodes validate and broadcast transactions, each maintaining a
+      copy of the blockchain for ownership verification. A new block is created
+      every 10 minutes on average, updating the blockchain across all nodes
+      without central oversight. This process tracks bitcoin spending, ensuring
+      each bitcoin is spent only once. Unlike a traditional ledger that tracks
+      physical currency, bitcoins exist digitally as unspent outputs of
+      transactions.
+    </p>
+
+    <h3>Addresses and transactions</h3>
+
+    <p>
+      In the blockchain, bitcoins are linked to specific addresses that are
+      hashes of a public key. Creating an address involves generating a random
+      private key and then computing the corresponding address. This process is
+      almost instant, but the reverse (finding the private key for a given
+      address) is nearly impossible. Publishing a bitcoin address does not risk
+      its private key, and it is extremely unlikely to accidentally generate a
+      used key with funds. To use bitcoins, owners need their private key to
+      digitally sign transactions, which are verified by the network using the
+      public key, keeping the private key secret. Bitcoin transactions use a
+      Forth-like scripting language, Involving one or more inputs and outputs.
+      When sending bitcoins, a user specifies the recipients' addresses and the
+      amount for each output. This allows sending bitcoins to several recipients
+      in a single transaction. To prevent double-spending, each input must refer
+      to a previous unspent output in the blockchain. Using multiple inputs is
+      similar to using multiple coins in a cash transaction. As in a cash
+      transaction, the sum of inputs can exceed the intended sum of payments. In
+      such a case, an additional output can return the change back to the payer.
+      Unallocated input satoshis in the transaction become the transaction fee.
+      Losing a private key means losing access to the bitcoins, with no other
+      proof of ownership accepted by the protocol. For instance, in 2013, a user
+      lost ₿7,500, valued at US$7.5 million, by accidentally discarding a hard
+      drive with the private key. It is estimated that around 20% of all
+      bitcoins are lost. The private key must also be kept secret as its
+      exposure, such as through a data breach, can lead to theft of the
+      associated bitcoins. As of December 2017, approximately ₿980,000 had been
+      stolen from cryptocurrency exchanges.
+    </p>
+
+    <h3>Mining</h3>
+
+    <p>
+      The mining process in Bitcoin involves maintaining the blockchain through
+      computer <a href="https://en.wikipedia.org/wiki/Bitcoin"> processing power</a> . Miners group and broadcast new transactions
+      into blocks, which are then verified by the network. Each block must
+      contain a proof of work (PoW) to be accepted, involving finding a nonce
+      number that, combined with the block content, produces a hash numerically
+      smaller than the network's difficulty target. This PoW is simple to verify
+      but hard to generate, requiring many attempts. PoW forms the basis of
+      Bitcoin's consensus mechanism. The difficulty of generating a block is
+      deterministically adjusted based on the mining power on the network by
+      changing the difficulty target, which is recalibrated every 2,016 blocks
+      (approximately two weeks) to maintain an average time of ten minutes
+      between new blocks. The process requires significant computational power
+      and specialized hardware. Miners who successfully find a new block can
+      collect transaction fees from the included transactions and a set reward
+      in bitcoins. To claim this reward, a special transaction called a coinbase
+      is included in the block, with the miner as the payee. All bitcoins in
+      existence have been created through this type of transaction. This reward
+      is halved every 210,000 blocks until ₿21 million, with new bitcoin
+      issuance slated to end around 2140. Afterward, miners will only earn from
+      transaction fees. These fees are determined by the transaction's size and
+      the amount of data stored, measured in satoshis per byte. The proof of
+      work system and the chaining of blocks make blockchain modifications very
+      difficult, as altering one block requires changing all subsequent blocks.
+      As more blocks are added, modifying older blocks becomes increasingly
+      challenging. In case of disagreement, nodes trust the longest chain, which
+      required the greatest amount of effort to produce. To tamper or censor the
+      ledger, one needs to control the majority of the global hashrate. The high
+      cost required to reach this level of computational power guarantees the
+      security of the bitcoin blockchain. Bitcoin mining's environmental impact
+      is controversial and has attracted the attention of regulators, leading to
+      restrictions or incentives in various jurisdictions. As of 2022, a
+      non-peer-reviewed study by the Cambridge Centre for Alternative Finance
+      (CCAF) estimated that bitcoin mining represented 0.4% of global
+      electricity consumption. Another 2022 non-peer-reviewed commentary
+      published in Joule estimated that bitcoin mining was responsible for 0.2%
+      of world greenhouse gas emissions. About half of the electricity used is
+      generated through fossil fuels. Moreover, mining hardware's short lifespan
+      results in electronic waste. The amount of electrical energy consumed, and
+      the e-waste generated, is comparable to that of Greece and the
+      Netherlands, respectively.
+    </p>
+
+    <h3>Privacy and fungibility</h3>
+    <p>
+      is pseudonymous, with funds linked to addresses, not real-world
+      identities. While the owners of these addresses are not directly
+      identified, all transactions are public on the blockchain. Patterns of
+      use, like spending coins from multiple inputs, can hint at a common owner.
+      Public data can sometimes be matched with known address owners. Bitcoin
+      exchanges might also need to collect personal data as per legal
+      requirements. For enhanced privacy, users can generate a new address for
+      each transaction. In the Bitcoin network, each bitcoin is treated equally,
+      ensuring basic fungibility. However, users and applications can choose to
+      differentiate between bitcoins. While wallets and software treat all
+      bitcoins the same, each bitcoin's transaction history is recorded on the
+      blockchain. This public record allows for chain analysis, where users can
+      identify and potentially reject bitcoins from controversial sources. For
+      example, in 2012, Mt. Gox froze accounts containing bitcoins identified as
+      stolen.
+    </p>
+
+    <h3>Wallets</h3>
+
+    <p>
+      Bitcoin wallets were the first cryptocurrency wallets, enabling users to
+      store the information necessary to transact bitcoins. glossary The first
+      wallet program, simply named Bitcoin, and sometimes referred to as the
+      Satoshi client, was released in 2009 by Nakamoto as open-source software.
+      Bitcoin Core is among the best known clients. Forks of Bitcoin Core exist
+      such as Bitcoin Unlimited. Wallets can be full clients, with a full copy
+      of the blockchain to check the validity of mined blocks, or lightweight
+      clients, just to send and receive transactions without a local copy of the
+      entire blockchain. Third-party internet services called online wallets
+      store users' credentials on their servers, making them susceptible of
+      hacks. Cold storage protects bitcoins from such hacks by keeping private
+      keys offline, either through specialized hardware wallets or paper
+      printouts.
+    </p>
+
+    <h3>Scalability and decentralization challenges</h3>
+    <p>
+      Nakamoto limited the block size to one megabyte. The limited block size
+      and frequency can lead to delayed processing of transactions, increased
+      fees and a Bitcoin scalability problem. The
+      <strong>Lightning Network, second-layer routing </strong>, is a potential
+      scaling solution. Research shows a trend towards centralization in bitcoin
+      as miners join pools for stable income.If a single miner or pool controls
+      more than 50% of the hashing power, it would allow them to censor
+      transactions and double-spend coins. In 2014, mining pool Ghash.io reached
+      51% mining power, causing safety concerns, but later voluntarily capped
+      its power at 39.99% for the benefit of the whole network. A few entities
+      also dominate other parts of the ecosystem such as the client software,
+      online wallets, and simplified payment verification (SPV) clients.
+    </p>
+
+    <h3>Economics and usage</h3>
+    <hr />
+    <h4>Bitcoin's theoretical roots and ideology</h4>
+
+    <p>
+      According to the <strong>European Central Bank</strong>, the
+      decentralization of money offered by bitcoin has its theoretical roots in
+      the <a href="https://en.wikipedia.org/wiki/Bitcoin">Austrian school of economics</a> , especially with Friedrich von Hayek's
+      book The Denationalization of Money, in which he advocates a complete free
+      market in the production, distribution and management of money to end the
+      monopoly of central banks. Sociologist Nigel Dodd, citing the
+      crypto-anarchist Declaration of Bitcoin's Independence, argues that the
+      essence of the bitcoin ideology is to remove money from social, as well as
+      governmental, control. The Economist describes bitcoin as "a
+      techno-anarchist project to create an online version of cash, a way for
+      people to transact without the possibility of interference from malicious
+      governments or banks". These philosophical ideas initially attracted
+      libertarians and anarchists. Economist Paul Krugman argues that
+      cryptocurrencies like bitcoin are only used by bank skeptics and
+      criminals.
+    </p>
+
+    <h4>Recognition as a currency and legal status</h4>
+
+    <p>
+      Money serves three purposes: a store of value, a medium of exchange, and a
+      unit of account.According to The Economist in 2014, bitcoin functions best
+      as a medium of exchange.[98] In 2015, The Economist noted that bitcoins
+      had three qualities useful in a currency: they are "hard to earn, limited
+      in supply and easy to verify". However, a 2018 assessment by The Economist
+      stated that cryptocurrencies met none of these three criteria. Per some
+      researchers, as of 2015, bitcoin functions more as a payment system than
+      as a currency. In 2014, economist Robert J. Shiller wrote that bitcoin has
+      potential as a unit of account for measuring the relative value of goods,
+      as with Chile's Unidad de Fomento, but that "Bitcoin in its present form
+      ... doesn't really solve any sensible economic problem". François R.
+      Velde, Senior Economist at the Chicago Fed, described bitcoin as "an
+      elegant solution to the problem of creating a digital currency". David
+      Andolfatto, Vice President at the <a href="https://en.wikipedia.org/wiki/Bitcoin">Federal Reserve Bank</a> of St. Louis,
+      stated that bitcoin is a threat to the establishment, which he argues is a
+      good thing for the Federal Reserve System and other central banks, because
+      it prompts these institutions to operate sound policies. The legal status
+      of bitcoin varies substantially from one jurisdiction to another. Because
+      of its decentralized nature and its global presence, regulating bitcoin is
+      difficult. However, the use of bitcoin can be criminalized, and shutting
+      down exchanges and the peer-to-peer economy in a given country would
+      constitute a de facto ban. The use of bitcoin by criminals has attracted
+      the attention of financial regulators, legislative bodies, and law
+      enforcement. Nobel-prize winning economist Joseph Stiglitz says that
+      bitcoin's anonymity encourages money laundering and other crimes.[105]
+      This is the main justification behind bitcoin bans. As of November 2021,
+      nine countries applied an absolute ban (Algeria, Bangladesh, China, Egypt,
+      Iraq, Morocco, Nepal, Qatar, and Tunisia) while another 42 countries had
+      an implicit ban. Bitcoin is only legal tender in El Salvador.
+    </p>
+
+    <h4>Use for payments</h4>
+
+    As of 2018, Bitcoin is rarely used in transactions with merchants, but it is
+    popular to <strong>purchase illegal goods online</strong>. Prices are not
+    usually quoted in bitcoin and trades involve conversions into fiat
+    currencies. Commonly cited reasons for not using Bitcoin include high costs,
+    the inability to process chargebacks, high price volatility, long
+    transaction times, and transaction fees (especially for small purchases).
+    Bloomberg reported that bitcoin was being used for large-item purchases on
+    the site Overstock.com and for cross-border payments to freelancers. As of
+    2015, there was little sign of bitcoin use in international remittances
+    despite high fees charged by banks and Western Union who compete in this
+    market. In September 2021, the Bitcoin Law made bitcoin legal tender in El
+    Salvador, alongside the US dollar. The adoption has been criticized both
+    internationally and within El Salvador. In particular, in 2022, the
+    International Monetary Fund (IMF) urged El Salvador to reverse its decision.
+    As of 2022, the use of Bitcoin in El Salvador remains low: 80% of businesses
+    refused to accept it despite being legally required to. In April 2022, the
+    Central African Republic (CAR) adopted Bitcoin as legal tender alongside the
+    CFA franc, but repealed the reform one year later. Bitcoin is also used by
+    some governments. For instance, the Iranian government initially opposed
+    cryptocurrencies, but later saw them as an opportunity to circumvent
+    sanctions.[118] Since 2020, Iran has required local bitcoin miners to sell
+    bitcoin to the Central Bank of Iran, allowing the central bank to use it for
+    imports. Some constituent states also accept tax payments in bitcoin,
+    including Colorado (US) and Zug (Switzerland). As of 2023, the US government
+    owned more than $5 billion worth of seized bitcoin.
+
+    <h4>Use for investment and status as an economic bubble</h4>
+
+    <p>
+      As of 2018, the overwhelming majority of bitcoin transactions took place
+      on <strong>cryptocurrency exchanges</strong>.Since 2014, regulated bitcoin
+      funds also allow exposure to the asset or to futures as an investment.
+      Individuals and companies such as the Winklevoss twins and Elon Musk's
+      companies SpaceX and Tesla have massively invested in Bitcoin. Bitcoin
+      wealth is highly concentrated, with 0.01% holding 27% of in-circulation
+      currency, as of 2021. As of September 2023, El Salvador had $76.5 million
+      worth of bitcoin in its international reserves. In 2018, research
+      published in the <strong>Journal of Monetary Economics</strong> concluded
+      that price manipulation occurred during the Mt. Gox bitcoin theft and that
+      the market remained vulnerable to manipulation. Research published in The
+      Journal of Finance also suggested that trading associated with increases
+      in the amount of the Tether cryptocurrency and associated trading at the
+      Bitfinex exchange accounted for about half of the price increase in
+      bitcoin in late 2017. Bitcoin, along with other cryptocurrencies, has been
+      described as an economic bubble by several economists, including Nobel
+      Prize in Economics laureates, such as Joseph Stiglitz, James Heckman, and
+      Paul Krugman. Another recipient of the prize, Robert Shiller, argues that
+      bitcoin is rather a fad that may become an asset class. He describes its
+      price growth as an "epidemic", driven by contagious narratives. According
+      to research published in the
+      <strong>International Review of Financial Analysis </strong> 2018, Bitcoin
+      as an asset is highly volatile and does not behave like any other
+      conventional asset. According to one 2022 analysis published in The
+      Journal of Alternative Investments, bitcoin was less volatile than oil,
+      silver, US Treasuries, and 190 stocks in the <a href="https://en.wikipedia.org/wiki/Bitcoin"> S&P 500</a> during and after the
+      2020 stock market crash. The term hodl was created in December 2013 for
+      holding Bitcoin rather than selling it during periods of volatility.
+      Economists, investors, and the central bank of Estonia have described
+      bitcoin as a potential Ponzi scheme. Legal scholar Eric Posner disagrees,
+      however, as "a real Ponzi scheme takes fraud; bitcoin, by contrast, seems
+      more like a collective delusion". A 2014 World Bank report also concluded
+      that bitcoin was not a deliberate Ponzi scheme.
+    </p>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/S3uTR-P0ycA?si=NjLf9yllzWwlVc31"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <h1>List</h1>
+
+    <h2>Public Companies Investing in Cryptocurrency</h2>
+
+    <ol type="A" start="1">
+      <li>MicroStrategy</li>
+
+      <li>Coinbase</li>
+
+      <li>Tesla</li>
+
+      <li>Square</li>
+
+      <li>Marathon Digital Holdings</li>
+
+      <li>Hut 8 Mining</li>
+
+      <li>Galaxy Digital Holdings</li>
+
+      <li>Voyager Digital</li>
+
+      <li>Bitcoin Group SE</li>
+
+      <li>Riot Blockchain</li>
+
+      <li>Bitfarms</li>
+    </ol>
+
+    <h2>Bitcoin companies and startups in India in May 2024</h2>
+    <ol type="I" start="1">
+      <li>Unocoin</li>
+
+      <li>Antier Solutions Pvt. Ltd</li>
+
+      <li>Coinjoker</li>
+
+      <li>WazirX</li>
+
+      <li>Coinsecure</li>
+
+      <li>blockonomics</li>
+
+      <li>Bittron Labs Private Limited</li>
+
+      <li>Blockchain Development Company</li>
+
+      <li>Coinsclone</li>
+
+      <li>Coinpedia.org</li>
+
+      <li>Bitoriginals</li>
+
+      <li>GoSats</li>
+    </ol>
+    <h1>Bitcoin</h1>
+
+    <h3>Bitcoin Wallet</h3>
+
+    <table border="2">
+      <tr>
+        <th>Sr.no</th>
+        <th>Types of Bitcoin</th>
+        <th>Explanation</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Daily spending wallet</td>
+        <td>
+          An in-depth exploration of a mobile wallet for a lightning-first,
+          on-the-go use case. Covers primary user flows like first use, sending
+          and requesting, features like backup and contacts, and more.
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Savings wallet</td>
+        <td>
+          A multi-key mobile wallet design that provides great security for
+          larger amounts, and low-friction for smaller transactions.
+        </td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Upgradeable wallet</td>
+        <td>
+          Exploring the concept of progressive security, in which applications
+          help users navigate varying security configurations appropriate to
+          their holdings and use case.
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Shared wallet</td>
+        <td>
+          An overview and considerations for bitcoin wallets that are managed by
+          multiple owners.
+        </td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Multiple wallets</td>
+        <td>
+          How to design for use cases where it is important to manage multiple
+          wallets in a single application.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
